@@ -7,6 +7,7 @@ use function Amp\File\{isDirectory, listFiles, isFile};
 trait Plugin {
     private function loadPlugin(string $dir): void
     {
+        $dir = __DIR__ . DIRECTORY_SEPARATOR . $dir;
         foreach(listFiles($dir) as $path) {
             $realPath  = $this->makePath($dir, $path);
             if (isDirectory($realPath)) {
