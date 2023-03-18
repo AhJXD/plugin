@@ -11,7 +11,7 @@
 
 This package can be installed as a [Composer](https://getcomposer.org) dependency.
 
-> Create a composer.json file.
+> Create a ```composer.json``` file.
 ```json
 {
   "require": {
