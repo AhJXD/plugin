@@ -1,0 +1,6 @@
+{
+    "require": {
+        "ahjxd/plugin": "*"
+    },
+    "minimum-stability": "beta"
+}
