@@ -1,6 +1,6 @@
 {
-    "minimum-stability" : "beta",
-    "require": {
+    "minimum-stability": "beta",
+    "require"          : {
         "danog/madelineproto": "8.0.0-beta64"
     },
     "name"       : "ahjxd/plugin",
@@ -15,7 +15,7 @@
     ],
     "authors": [
         {
-            "name": "AhJ",
+            "name" : "AhJ",
             "email": "AmirhosseinJafari8228@gmail.com"
         }
     ]
