@@ -74,7 +74,7 @@ class Plugin extends  AhJXD\Plugin\Handler
          * Add "Admin" for plugin call
          * You can use any if clause
          */
-        if (in_array($params['from_id'], self::Admin))
+        if (in_array($params['fromId'], self::Admin))
             $mode = 'Admin'; // * Add Admin Plugins
     
         $type = ($this->plugin[$mode] ?? []) + ($this->plugin['public'] ?? []); // Combine Types
