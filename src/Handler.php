@@ -65,4 +65,11 @@ class Handler extends EventHandler
     {
         return implode(DIRECTORY_SEPARATOR, $args);
     }
+
+    /**
+     * Excute all plugins 
+     */
+    public function callPlugin(array $mode ,array $params) {
+        array_map(fn($plugin) => EventLoop::queue($plugin, $params), $mode);
+    }
 }
