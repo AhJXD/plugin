@@ -8,7 +8,6 @@ use danog\Loop\GenericLoop;
 trait Loop {
     private function loadLoop(string $dir): void
     {
-        $dir = __DIR__ . DIRECTORY_SEPARATOR . $dir;
         foreach(listFiles($dir) as $path) {
             $realPath = $this->makePath($dir, $path);
             $pathInfo = pathinfo($realPath);

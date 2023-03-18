@@ -7,7 +7,6 @@ use function Amp\File\{ listFiles, isFile };
 trait Start {
     private function loadStart(string $dir): void
     {
-        $dir = __DIR__ . DIRECTORY_SEPARATOR . $dir;
         foreach(listFiles($dir) as $path) {
             $realPath = $this->makePath($dir, $path);
             $pathInfo = pathinfo($realPath);
