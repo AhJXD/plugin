@@ -26,15 +26,15 @@ class Plugin extends  AhJXD\Plugin\Handler
     }
     
     public function getLoopDir() {
-        return 'Loop'; // ! Do not use / before path
+        return 'Plugs/Loop'; // ! Do not use / before path
     }
 
     public function getStartDir() {
-        return 'Start';
+        return 'Plugs/Start';
     }
 
     public function getPluginDir() {
-        return 'Plugin';
+        return 'Plugs/Plugin';
     }
 
     /**
@@ -71,7 +71,7 @@ class Plugin extends  AhJXD\Plugin\Handler
         ];
 
         /**
-         * "Add Admin" for plugin call
+         * Add "Admin" for plugin call
          * You can use any if clause
          */
         if (in_array($params['from_id'], self::Admin))
