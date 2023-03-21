@@ -96,8 +96,8 @@ $settings->getLogger()
     ->setMaxSize(26214400);
 /*----------*/
 $settings->getAppInfo()
-    ->setApiId(8044771)
-    ->setApiHash('c825a9de65d6ba6dfb164dfd12505af3');
+    ->setApiId(00000)
+    ->setApiHash('');
 /*----------*/
 $settings->setDb((new Settings\Database\Memory)
 	->setCleanup(true)
